@@ -1,0 +1,38 @@
+# =====================================================================
+# Cau hinh Top 2 cho Camera Dem Si so Lop hoc - UniFace Student
+# Thuat toan: FastTracker (Phien ban toi uu hoa: FastTrack_075)
+# Ket qua kiem thu:
+#   - Sai so MAE tong hop: 2.45 (Thap nhat toan bo benchmark)
+#   - Kiem soat ID tot nhat: 58 IDs (Chong nhay ID vuot troi)
+#   - Ty le dung tren Video Altima (che khuat ban ghe): 11.6% (Top 1)
+# =====================================================================
+
+tracker_type: fasttrack
+
+# Nguong phat hien tang 1 (High-confidence detection threshold)
+track_high_thresh: 0.25
+
+# Nguong phat hien tang 2 (Low-confidence detection threshold)
+track_low_thresh: 0.10
+
+# Nguong khoi tao track moi (New track threshold)
+new_track_thresh: 0.25
+
+# Do dai bo dem luu giu track bi mat dau (60 frames ~2.0s: giu track khi SV cui dau viet bai)
+track_buffer: 60
+
+# Nguong ghep cap IoU
+match_thresh: 0.80
+
+# Hoa tron diem tin cay vao chi phi ghep cap
+fuse_score: True
+
+# FastTracker knobs toi uu cho che khuat lop hoc
+reset_velocity_offset_occ: 5
+reset_pos_offset_occ: 3
+enlarge_bbox_occ: 1.10
+dampen_motion_occ: 0.50
+active_occ_to_lost_thresh: 12
+occ_cover_thresh: 0.45
+occ_reappear_window: 60
+init_iou_suppress: 0.50

@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+env/
+
+# Công cụ kiểm thử / phân tích
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# IDE và hệ điều hành
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Cấu hình cục bộ
+.env
+.opencode/
+
+# Dữ liệu cục bộ: chứa thông tin sinh viên, không đưa lên Git
+data/
+*.db
+*.db-wal
+*.db-shm
+*.db-journal
+
+# Báo cáo xuất ra
+diem_danh_*.xlsx
+
+# Log và tệp tạm
+*.log
+*.tmp

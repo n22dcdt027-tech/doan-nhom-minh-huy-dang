@@ -1,0 +1,28 @@
+# =====================================================================
+# Cau hinh toi uu cho Camera Dem Si so Lop hoc - UniFace Student
+# Thuat toan: ByteTrack (Phien ban toi uu hoa quan quan: ByteTrack_062)
+# Ket qua kiem thu 100% frames (2.369 frames):
+#   - Sai so MAE trung binh: 2.34 (Thap nhat toan bo benchmark)
+#   - Ty le dung Mode trung binh: 29.6% (Cao nhat toan bo benchmark)
+#   - So frame dung tuyet doi: 252 frames (Cao nhat toan bo benchmark)
+# =====================================================================
+
+tracker_type: bytetrack
+
+# Nguong phat hien tang 1 (High-confidence detection threshold)
+track_high_thresh: 0.25
+
+# Nguong phat hien tang 2 (Ha tu 0.10 xuong 0.08 de cuu SV cui dau & ngoi xa)
+track_low_thresh: 0.08
+
+# Nguong khoi tao track moi (Chong sinh track ao tu balo, ghe)
+new_track_thresh: 0.25
+
+# Do dai bo dem (20 frames ~0.67s: thanh ly ngay track khi giam thi ra khoi cua)
+track_buffer: 20
+
+# Nguong ghep cap IoU (Chong ghep nham SV ngoi ban ke nhau)
+match_thresh: 0.80
+
+# Hoa tron diem tin cay vao khoang cach IoU
+fuse_score: True
